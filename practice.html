@@ -1,0 +1,48 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="ENG">
+  <head>
+    <title>practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./line-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./dom.css" />
+  </head>
+  <body>
+     <button>9a</button>
+     <button class="js-btn" onclick="
+       document.querySelector('.js-btn').innerHTML='9b done'
+     ">9b</button>
+     <div></div>
+     <button class="js-head" onclick="document.querySelector('.js-display').innerHTML= 'You have choose : Head' ">Head</button>
+     <button class="js-tail" onclick="document.querySelector('.js-display').innerHTML = 'You have choose : Tail'">Tail</button>
+
+     <p class="js-display"></p>
+
+
+     <input type="text" placeholder="Name" class="js-input" onkeydown="handle(event)">
+     <button class="js-submit" onclick="submitbtn()" >Submit</button>
+     <p class="js-name"></p>
+
+    <script>
+      console.log(document.querySelector('button'));
+      
+      function submitbtn() {
+        let inputElement = document.querySelector('.js-input');
+      let sub = inputElement.value;
+
+      document.querySelector('.js-name').innerHTML= `Your name is: ${sub}`
+      }
+
+      function handle(event) {
+
+        if (event.key=== 'Enter') {
+          submitbtn()
+        }
+
+      }
+
+    </script>
+  </body>
+</html>

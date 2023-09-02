@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ENG">
+  <head>
+    <title>Exercise-12</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./line-awesome.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="index.css" /> -->
+  </head>
+  <body>
+    <button class="js-start" onclick="finish()">Start</button>
+
+    <button class="js-add-to-cart">Add to Cart</button>
+    <p class="js-message"></p>
+
+
+
+    <script >
+      
+       let add = function() {
+         console.log(2+3)
+       }
+      add();
+       add();
+
+      function runTwice(fun) {
+        
+        fun();
+        fun();
+      }
+
+      runTwice(function() {console.log('12b')});
+
+
+      function finish() {
+        let button = document.querySelector('.js-start');
+        button.innerHTML = 'Loading....';
+        setTimeout(function() {
+          button.innerHTML = 'Finished'
+        },1000);
+
+
+      }
+
+
+
+      document.querySelector('.js-add-to-cart').addEventListener('click',() =>{
+      
+      const btn = document.querySelector('.js-message');
+      btn.innerHTML='Added';
+     setTimeout( () => {btn.innerHTML=''},2000);
+
+      })
+       const  multiply = (num1 , num2) => num1 * num2;
+      
+       const result = multiply(2,3);
+
+        
+       console.log(result);
+
+  
+      
+    </script>
+  </body>
+</html>

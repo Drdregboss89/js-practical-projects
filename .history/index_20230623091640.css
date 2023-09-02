@@ -1,0 +1,37 @@
+/** @format */
+
+ .root {
+  --main-color: #379237;
+  --font-color: #f0ff42;
+  --border-color: #001253;
+  --body-color: #f6f6c9;
+} 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+  background-color:black;
+ 
+}
+
+ h1 {
+  
+  margin-bottom: 40px;
+  margin-top: 35px;
+  font-size: 35px;
+  font-weight: :800;
+  color:white;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 25px;
+  height:50px;
+  border-radius:75px;
+  border: 5px solid rgb(206, 154, 13);
+  margin-left: 30px;
+  margin-bottom: 10px;
+  background-color: #333;
+  color: #fff;
+}

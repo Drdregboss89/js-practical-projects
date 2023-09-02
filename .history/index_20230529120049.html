@@ -1,0 +1,49 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="ENG">
+  <head>
+    <title>Rock Paper Scissor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./" />
+    <link rel="stylesheet" type="text/css" href="./line-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <p>The Rock Paper Scissor</p>
+    <div class="btn">
+      <button
+        onclick="playGame('Rock')
+    
+  alert(`You select Rock . computer select ${computerMove}. ${result}`);"
+      >
+       <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+    </button>
+    <button onclick="playGame('Paper')
+
+    alert(`You select Paper . computer select ${computerMove}. ${result}`)"
+      >
+        Paper
+      </button>
+      <button
+        onclick="
+      const computerMove = rock()
+    let results = '';
+
+    if (computerMove ==='Rock') {
+    results = 'Tie';
+  } else if (computerMove ===  'Scissor') {
+    results = 'you win';
+  } else if (computerMove === 'Paper') {
+    results = 'you loose';
+  }
+  alert(`You select Scissor . computer select ${computerMove} ${results}`);
+    "
+      >
+        Scissor
+      </button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

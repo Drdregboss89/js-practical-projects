@@ -1,0 +1,61 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="ENG">
+  <head>
+    <title>array and loops</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./line-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./dom.css" />
+  </head>
+  <body>
+    
+  <p class="js-para">To do list</p>
+  <input placeholder="To do name" class="js-toDoname">
+  <input type="date">
+  <button class="js-add" onclick="
+   addTodo()
+  "
+  >Add</button>
+  <div class="js-list"></div>
+
+
+    <script>
+      const toDolist = [" make dinner , wash dishes " ]
+       render();
+
+      function render() {
+      let toDoHTML = '';
+
+      for (let i = 0 ;i < toDolist.length ; i++)
+       {
+        const toDo = toDolist[i];
+        const html = `<p> ${toDo} <button> Delete </button> </p>`;
+
+        
+
+        toDoHTML += html
+        
+
+        document.querySelector('.js-list')
+        .innerHTML = toDolist
+
+        }
+        
+      }
+
+      function addTodo() {
+       const inputElement = document.querySelector('.js-toDoname');
+        let input = inputElement.value;
+
+        toDolist.push(input);
+        document.querySelector('.js-list')
+        .innerHTML = input;
+
+        inputElement.value = '';
+        render();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="ENG">
+  <head>
+    <title>DOM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./line-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./dom.css" />
+  </head>
+  <body>
+    <p id="youtube">Youtube Subscribe button</p>
+    <button
+      onClick=
+      "const buttonElement =  document.querySelector('.js-subscribe')
+      ;
+      if (buttonElement.innerHTML === 'Subscribe') {
+        buttonElement.innerHTML = 'Subscribed';
+        buttonElement.classList.add('isSubscribed');
+      } else {
+        buttonElement.innerHTML ='Subscribe'
+        buttonElement.classList.remove('isSubscribed')
+      };"
+      class="js-subscribe" 
+      
+    >Subscribe</button>
+
+
+    <p>Amazon Shipping Calculate</p>
+    <input placeholder="cost of sale" class="js-costInput costInput" onkeydown="
+     handleEventonkeydown(event)
+    ">
+    <button class="js-calculate "
+    onclick="
+     
+     calculate()
+     
+
+    "
+    >Calculate</button>
+    <p class="js-totalCost "></p>
+
+    <script>
+      function handleEventonkeydown(event) {
+      
+        if (event.key==='Enter') {
+        calculate()
+    } 
+      }
+
+      function calculate() {
+           const inputElement = document.querySelector('.js-costInput');
+             let cost = Number(inputElement.value);
+
+             if (cost < 40) {
+                cost = cost + 10 
+     }
+     document.querySelector('.js-totalCost').innerHTML = `$${cost}`  
+      }
+    </script>
+  </body>
+</html>

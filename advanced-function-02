@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ENG">
+  <head>
+    <title>Exercise-12</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./line-awesome.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="index.css" /> -->
+  </head>
+  <body>
+    <button class="js-click" onclick="">Click</button>
+
+
+
+    <script >
+      const buttonElement = document.querySelector('js-click')
+
+      buttonElement.document.addEventListener('click','() => { console.log('hello')}')
+      
+    </script>
+  </body>
+</html>
